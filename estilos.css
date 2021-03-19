@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* Margin 0 em body é para que a barra do topo esteja "colada" na janela do navegador*/
+}
+
+.header {
+    background-color: #232323;
+    color: white;
+    
+    /* Como estamos usando float, o header vai "sumir" se não tiver uma altura.
+    Para que o header esteja visível, você tem duas saídas:
+    1. Adicionar uma altura (height) fixa.
+    2. Configurar para que header tenha o tamanho de seus elementos dentro dele,
+    não deixando que nada "derrame" para fora. (overflow: auto)
+    */
+
+    /* height: 102px; */ 
+    overflow: auto;
+    border-bottom: 3px solid orangered; 
+
+    /* Estilos que se repetem em todas as dimensoes do elemento como 
+    padding, border, margin, têm suas variações top-right-left-bottom.
+    
+    Você pode escrever cada uma delas separadamente
+    (padding-top)(padding-right)(padding-bottom)(padding-left)
+    ou todas juntas
+    (padding: W X Y Z;) ou (padding: X Y;)
+
+    Atenção!
+    Com 4 valores:
+    o primeiro valor é para CIMA/TOP
+    o segundo valor é para DIREITA/RIGHT
+    o terceiro valor é para BAIXO/BOTTOM
+    o quarto valor é para ESQUERDA/LEFT
+
+    Com 2 valores:
+    o primeiro valor é para CIMA/TOP e BOTTOM/RIGHT
+    o segundo valor é para DIREITA/RIGHT e ESQUERDA/LEFT
+    */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* As duas linhas acima são igual a usar a linha de baixo*/
+    /* padding: 25px 0 25px 0; */ 
+    /* Ou a usar essa outra linha, abaixo */
+    /* padding: 25px 0; */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /*margin: auto; -> divide o valor que "sobrou" de width nos dois lados do elemento, centralizando-o.*/
+}
+
+.navbar {
+    list-style: none;
+    /*list-style: none; -> elimina os bullets da Lista Não Ordenada.*/
+    float: right;
+}
+
+.titulo {
+    margin: 0;
+    float: left;
+    padding-top: 5px;
+}
+
+/* .navbar li {
+    float: left;
+} */
+
+.header .navbar li {
+    float: left;
+    margin-left: 13px;
+    text-transform: uppercase;
+}
+
+.destaque {
+    color: orangered;
+}
