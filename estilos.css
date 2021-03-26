@@ -7,18 +7,15 @@ body {
 .header {
     background-color: #232323;
     color: white;
-    
     /* Como estamos usando float, o header vai "sumir" se não tiver uma altura.
     Para que o header esteja visível, você tem duas saídas:
     1. Adicionar uma altura (height) fixa.
     2. Configurar para que header tenha o tamanho de seus elementos dentro dele,
     não deixando que nada "derrame" para fora. (overflow: auto)
     */
-
-    /* height: 102px; */ 
+    /* height: 102px; */
     overflow: auto;
-    border-bottom: 3px solid orangered; 
-
+    border-bottom: 3px solid orangered;
     /* Estilos que se repetem em todas as dimensoes do elemento como 
     padding, border, margin, têm suas variações top-right-left-bottom.
     
@@ -41,7 +38,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     /* As duas linhas acima são igual a usar a linha de baixo*/
-    /* padding: 25px 0 25px 0; */ 
+    /* padding: 25px 0 25px 0; */
     /* Ou a usar essa outra linha, abaixo */
     /* padding: 25px 0; */
 }
@@ -76,4 +73,76 @@ body {
 
 .destaque {
     color: orangered;
+}
+
+/* BANNER */
+
+.banner {
+    text-align: center;
+    background-color: palevioletred;
+    background-image: url(imgs/banner-fundo-big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 150px;
+}
+
+.banner h3 {
+    color: #555555;
+}
+
+/* SABER MAIS */
+
+.saiba-mais button {
+    border: 0;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.saiba-mais {
+    text-align: center;
+    background-color:#232323;
+    height: 90px;
+}
+
+/* MISSAO VISAO VALORES */
+
+.box img {
+    height: 100px
+}
+
+.box {
+    /* border: 3px solid red; */
+    overflow: auto;
+} 
+
+.box-item {
+    /* border: 1px solid purple; */
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    background-color: orangered;
+    height: 90px;
+}
+
+.footer h4 {
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 100;
+    color: white;
 }
