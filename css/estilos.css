@@ -80,7 +80,7 @@ body {
 .banner {
     text-align: center;
     background-color: palevioletred;
-    background-image: url(imgs/banner-fundo-big.jpeg);
+    background-image: url(../imgs/banner-fundo-big.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -146,3 +146,72 @@ body {
     font-weight: 100;
     color: white;
 }
+
+/* aula 09-04*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+/* ESTILO DO LOGIN */
+
+.pag-login {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.box-login {
+    background-color: white;
+    width: 40%;
+    margin:auto;
+    /* text-align:center; */
+    box-shadow: 3px 3px 5px 2px #ccc;
+    /* Adicionado fora da aula */
+    padding: 60px 20px 0 20px;
+    border-radius: 20px;
+    /*Fim adicionado fora da aula*/
+}
+
+.pag-login h1 {
+    margin: 0;
+    /* Adicionado fora da aula */
+    text-align:center;
+    margin-bottom: 40px;
+    /*Fim adicionado fora da aula*/
+}
+
+/* Adicionado fora da aula */
+
+.extra {
+    height: 50px;
+}
+
+.pag-login input {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.pag-login button {
+    color: white;
+    background-color: green;
+    margin: 20px 0 50px 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+/*Fim adicionado fora da aula*/
+
+
